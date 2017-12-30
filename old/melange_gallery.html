@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Melange Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/custom_css/mel_gall_style.css">   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    div.scrollmenu {
+        background-color: #333;
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    div.scrollmenu  {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    div.scrollmenu :hover {
+        background-color: #777;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Melange Gallery</h2>
+  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">ENTC</a></li>
+    <li><a data-toggle="tab" href="#menu1">Technical</a></li>
+    <li><a data-toggle="tab" href="#menu2">Socials</a></li>
+    <li><a data-toggle="tab" href="#menu3">Socials</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>ENTC</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <div class="row">
+        <div class="col-md-4 col-xs-4 ">
+          <img src="assets/img/img1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">   <!--can display short version of the image here-->
+        </div>
+        <div class="col-md-4 col-xs-4 ">
+          <img src="assets/img/img2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+        <div class="col-md-4 col-xs-4 ">
+          <img src="assets/img/img3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </div>
+      </div>
+
+      <br/>
+
+      <div  class="row">
+        <div class=" col-md-2 col-xs-2">
+          
+        </div>
+        <div class=" col-md-4 col-xs-4">
+          <img src="assets/img/img4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        </div>
+        <div class=" col-md-4 col-xs-4">
+          <img src="assets/img/img4.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        </div>
+        <div class=" col-md-2 col-xs-2">
+          
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 5</div>
+            <img src="assets/img/img1.jpg" style="width:100%">   <!--can display short version of the image here-->
+          </div> 
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+            <img src="assets/img/img2.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 5</div>
+            <img src="assets/img/img3.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+            <img src="assets/img/img4.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">5 / 5</div>
+            <img src="assets/img/img4.jpg" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="scrollmenu" >
+              <img class="demo cursor" src="assets/img/img1.jpg" style="width:30%" onclick="currentSlide(1)" alt="Nature and sunrise">   <!--can display actual images here-->
+              <img class="demo cursor" src="assets/img/img2.jpg" style="width:30%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+              <img class="demo cursor" src="assets/img/img3.jpg" style="width:30%" onclick="currentSlide(3)" alt="Mountains and fjords">
+              <img class="demo cursor" src="assets/img/img4.jpg" style="width:30%" onclick="currentSlide(4)" alt="Northern Lights">
+              <img class="demo cursor" src="assets/img/img4.jpg" style="width:30%" onclick="currentSlide(5)" alt="Northern Lights">
+          </div>
+        </div>
+      </div>
+      <br/>
+      <p>The images were quite wide in comparison to height, hence the height seen is small.</p>
+      <p>Another idea is to display different files(pages) - giving ajax link to different tabs - in that, the respective tab can be made as 'active'.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Technical</h3>
+      <div class="scrollmenu">
+        <img class="demo cursor" src="assets/img/img4.jpg" style="width:30%" alt="Northern Lights">
+        <img class="demo cursor" src="assets/img/img4.jpg" style="width:30%" alt="Northern Lights">
+        <img class="demo cursor" src="assets/img/img4.jpg" style="width:30%" alt="Northern Lights">
+        <img class="demo cursor" src="assets/img/img4.jpg" style="width:30%" alt="Northern Lights">
+        <img class="demo cursor" src="assets/img/img4.jpg" style="width:30%" alt="Northern Lights">
+      </div>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <img class="demo cursor" src="assets/img/img4.jpg" style="width:200% border-radius: 50%" alt="Northern Lights">
+        
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Socials</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <!--START JUICEBOX EMBED-->
+      <script src="jbcore/juicebox.js"></script>
+      <script>
+      new juicebox({
+        containerId: 'juicebox-container',
+        galleryWidth: '100%',
+        galleryHeight: '100%',
+        backgroundColor: 'rgba(51,51,51,1)'
+      });
+      </script>
+      <div id="juicebox-container"></div>
+      <!--END JUICEBOX EMBED-->
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Socials</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="assets/custom_js/mel_gall_js.js" charset="UTF-8"></script>
+
+
+</body>
+</html>
