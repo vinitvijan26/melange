@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	galleryTitle="Technical Gallery"
+	backgroundColor="rgba(51,51,51,1)"
+	textColor="rgba(204,153,0,1)"
+	showOpenButton="true"
+	indexPageName="melange-gallery.html"
+
+>
+  <image imageURL="images/img1.jpg"
+	thumbURL="thumbs/img1.jpg"
+	linkURL="images/img1.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/Vinit/Documents/projects/melange/assets/img/img1.jpg">
+    <title><![CDATA[img1]]></title>
+    <caption><![CDATA[Hi, I'm image 1.]]></caption>
+  </image>
+  <image imageURL="images/img2.jpg"
+	thumbURL="thumbs/img2.jpg"
+	linkURL="images/img2.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/Vinit/Documents/projects/melange/assets/img/img2.jpg">
+    <title><![CDATA[img2]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/img3.jpg"
+	thumbURL="thumbs/img3.jpg"
+	linkURL="images/img3.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/Vinit/Documents/projects/melange/assets/img/img3.jpg">
+    <title><![CDATA[img3]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/img4.jpg"
+	thumbURL="thumbs/img4.jpg"
+	linkURL="images/img4.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/Vinit/Documents/projects/melange/assets/img/img4.jpg">
+    <title><![CDATA[img4]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+	<image imageURL="images/img4.jpg"
+	thumbURL="thumbs/img4.jpg"
+	linkURL="images/img4.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/Vinit/Documents/projects/melange/assets/img/img4.jpg">
+    <title><![CDATA[img4]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+</juiceboxgallery>
